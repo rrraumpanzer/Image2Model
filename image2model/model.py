@@ -1,7 +1,22 @@
 """
-from transformers import pipeline
-image_path = ""
-pipe = pipeline("image-segmentation", model="briaai/RMBG-1.4", trust_remote_code=True)
-pillow_mask = pipe(image_path, return_mask = True) # outputs a pillow mask
-pillow_image = pipe(image_path) # applies mask on input and returns a pillow image
+from PIL import Image
+from refiners.solutions import BoxSegmenter
+
+input_image = Image.open("input.png") 
+
+# Downloads the weights from finegrain/finegrain-box-segmenter
+segmenter = BoxSegmenter()
+# box_prompt is (x_min, y_min, x_max, y_max)
+mask = segmenter(input_image, box_prompt=(24, 133, 588, 531))
+# Or without box_prompt as a background remover
+# mask = segmenter(input_image.convert("RGB"))
+mask.save("output.png")
+
+
+
+
+
+РАЗОБРАТЬСЯ С ПОДКЛЮЧЕНИЕМ REFINERS
+https://github.com/finegrain-ai/refiners/
+https://rye.astral.sh/
 """
