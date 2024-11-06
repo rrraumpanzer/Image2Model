@@ -14,7 +14,7 @@ mask.save("output.png")
 
 
 
-
+Заменил брию, лицензия не позволяет её коммерческое использование
 
 РАЗОБРАТЬСЯ С ПОДКЛЮЧЕНИЕМ REFINERS
 https://github.com/finegrain-ai/refiners/
