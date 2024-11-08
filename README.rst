@@ -28,3 +28,7 @@
 
 
 ``http GET localhost:8000/get_coords``
+
+/// Надо установить refiners через pip
+
+``pip install git+https://github.com/finegrain-ai/refiners``
