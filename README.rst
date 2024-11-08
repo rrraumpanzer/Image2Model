@@ -29,6 +29,7 @@
 
 ``http GET localhost:8000/get_coords``
 
-/// Надо установить refiners через pip
-
+/// Для сегментации надо установить refiners через pip
+/// Результат в output.png
+/// Нужно отредактировать эндпоинт координат для передачи баундинг бокса объекта (левый верхний, правый нижний углы)
 ``pip install git+https://github.com/finegrain-ai/refiners``
