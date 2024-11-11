@@ -19,7 +19,9 @@
 ``curl -X POST -F 'image=@test_image.jpg' http://localhost:8000/image``
 
 
-``curl -o image.jpg http://localhost:8000/image`` *Сохранит результат GET запроса в image.jpg*
+``curl -o image.jpg http://localhost:8000/image`` 
+
+ (Сохранит результат GET запроса в image.jpg)
  
 
 Получение сегментированной картинки:
@@ -41,7 +43,9 @@
 ``http POST localhost:8000/process``
 
 
-Принцип работы:
+**Принцип работы:**
+
+
 Сначала загружаем картинку:
 
 ``curl -X POST -F 'image=@test_image.jpg' http://localhost:8000/image``
