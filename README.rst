@@ -66,12 +66,10 @@
 
 ``curl -o image.jpg http://localhost:8000/processed-image``
 
- (если координаты не ввести будет сегментироваться вся картинка, что может вызвать непредсказуемый результат)
-
-
-
 
 
 /// Для сегментации надо установить refiners через pip
-/// Результат в image.png
+
+
+    РАБОТАЕТ ТОЛЬКО НЕ НИЖЕ ВЕРСИИ 0.4.1.dev...
 ``pip install git+https://github.com/finegrain-ai/refiners``
