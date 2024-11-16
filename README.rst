@@ -73,3 +73,9 @@
 
     РАБОТАЕТ ТОЛЬКО НЕ НИЖЕ ВЕРСИИ 0.4.1.dev...
 ``pip install git+https://github.com/finegrain-ai/refiners``
+
+
+https://github.com/VAST-AI-Research/TripoSR.git 
+
+
+https://github.com/Stability-AI/stable-fast-3d
